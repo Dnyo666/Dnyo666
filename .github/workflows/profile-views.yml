@@ -7,9 +7,11 @@ on:
 jobs:
   update-views:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Update Count and Generate Badge
         run: |
@@ -26,3 +28,5 @@ jobs:
           git add views.txt profile_views_badge.svg
           git commit -m "Update profile views" || exit 0
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
