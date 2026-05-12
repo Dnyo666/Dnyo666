@@ -1,5 +1,5 @@
 <div align="center">
-<img width="1016" height="414" alt="bg" src="./bg.png" />
+<img width="688" height="384" alt="bg" src="./bg.png" />
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=slice&color=00000000&height=120&section=header&text=Hi! I'm Dnyo666&fontSize=80&fontColor=6acef9&animation=fadeIn" />
 </p>
